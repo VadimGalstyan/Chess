@@ -11,8 +11,12 @@ int main()
 {
     Board board;
 
-    King king(6,'D',"Black");
+    King king(3,'H',"Black");
     board.addFigure(&king);
+
+    Queen b1(4,'B',"Black");
+    board.addFigure(&b1);
+
 
     King king2(5,'A',"White");
     board.addFigure(&king2);
@@ -20,12 +24,14 @@ int main()
     Queen q(4,'D',"White");
     board.addFigure(&q);
 
-    Queen b(7,'C',"White");
+    Queen b(8,'C',"White");
     board.addFigure(&b);
 
     Rook r(1,'E',"White");
     board.addFigure(&r);
 
+    Rook r1(7,'F',"White");
+    board.addFigure(&r1); 
     
     board.print();
     std::cout<<std::endl;

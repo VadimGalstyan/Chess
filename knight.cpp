@@ -26,6 +26,14 @@ void Knight::attack(Board* board)
                 {
                     board->checkmateTable[i - 2][j - 1] = false;
                 }
+                else
+                {
+                    if (board->board[i][j]->getColor() == m_color)
+                    {
+                        board->checkmateTable[i][j] = false;
+                    }
+                    
+                }
             } 
         }
 
@@ -40,6 +48,14 @@ void Knight::attack(Board* board)
                 if (board->board[i - 2][j + 1]->getName() == "KING" && board->board[i - 2][j + 1]->getColor() != m_color)
                 {
                     board->checkmateTable[i - 2][j + 1] = false;
+                }
+                else
+                {
+                    if (board->board[i][j]->getColor() == m_color)
+                    {
+                        board->checkmateTable[i][j] = false;
+                    }
+                    
                 }
             }
         }
@@ -59,6 +75,14 @@ void Knight::attack(Board* board)
                 {
                     board->checkmateTable[i + 2][j - 1] = false;
                 }
+                else
+                {
+                    if (board->board[i][j]->getColor() == m_color)
+                    {
+                        board->checkmateTable[i][j] = false;
+                    }
+                    
+                }
             }
         }
 
@@ -73,6 +97,14 @@ void Knight::attack(Board* board)
                 if (board->board[i + 2][j + 1]->getName() == "KING" && board->board[i + 2][j + 1]->getColor() != m_color)
                 {
                     board->checkmateTable[i + 2][j + 1] = false;
+                }
+                else
+                {
+                    if (board->board[i][j]->getColor() == m_color)
+                    {
+                        board->checkmateTable[i][j] = false;
+                    }
+                    
                 }
             }
         }
@@ -94,6 +126,14 @@ void Knight::attack(Board* board)
                 {
                     board->checkmateTable[i - 1][j - 2] = false;
                 }
+                else
+                {
+                    if (board->board[i][j]->getColor() == m_color)
+                    {
+                        board->checkmateTable[i][j] = false;
+                    }
+                    
+                }
             } 
         }
 
@@ -108,6 +148,14 @@ void Knight::attack(Board* board)
                 if (board->board[i + 1][j - 2]->getName() == "KING" && board->board[i + 1][j - 2]->getColor() != m_color)
                 {
                     board->checkmateTable[i + 1][j - 2] = false;
+                }
+                else
+                {
+                    if (board->board[i][j]->getColor() == m_color)
+                    {
+                        board->checkmateTable[i][j] = false;
+                    }
+                    
                 }
             }  
         }
@@ -128,6 +176,14 @@ void Knight::attack(Board* board)
                 {
                     board->checkmateTable[i - 1][j + 2] = false;
                 }
+                else
+                {
+                    if (board->board[i][j]->getColor() == m_color)
+                    {
+                        board->checkmateTable[i][j] = false;
+                    }
+                    
+                }
             }  
         }
 
@@ -142,6 +198,14 @@ void Knight::attack(Board* board)
                 if (board->board[i + 1][j + 2]->getName() == "KING" && board->board[i + 1][j + 2]->getColor() != m_color)
                 {
                     board->checkmateTable[i + 1][j + 2] = false;
+                }
+                else
+                {
+                    if (board->board[i][j]->getColor() == m_color)
+                    {
+                        board->checkmateTable[i][j] = false;
+                    }
+                    
                 }
             } 
         }

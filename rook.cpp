@@ -26,6 +26,14 @@ void Rook::attack(Board* board)
             {
                 board->checkmateTable[i][j] = false;
             }
+            else
+            {
+                if (board->board[i][j]->getColor() == m_color)
+                {
+                    board->checkmateTable[i][j] = false;
+                }
+                
+            }
             break;
         }
     }
@@ -43,6 +51,14 @@ void Rook::attack(Board* board)
             if (board->board[i][j]->getName() == "KING" && board->board[i][j]->getColor() != m_color)
             {
                 board->checkmateTable[i][j] = false;
+            }
+            else
+            {
+                if (board->board[i][j]->getColor() == m_color)
+                {
+                    board->checkmateTable[i][j] = false;
+                }
+                
             }
             break;
         }
@@ -64,6 +80,14 @@ void Rook::attack(Board* board)
             {
                 board->checkmateTable[i][j] = false;
             }
+            else
+            {
+                if (board->board[i][j]->getColor() == m_color)
+                {
+                    board->checkmateTable[i][j] = false;
+                }
+                
+            }
             break;
         }
     }
@@ -82,6 +106,14 @@ void Rook::attack(Board* board)
             if (board->board[i][j]->getName() == "KING" && board->board[i][j]->getColor() != m_color)
             {
                 board->checkmateTable[i][j] = false;
+            }
+            else
+            {
+                if (board->board[i][j]->getColor() == m_color)
+                {
+                    board->checkmateTable[i][j] = false;
+                }
+                
             }
             break;
         }

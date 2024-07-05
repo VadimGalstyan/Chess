@@ -49,15 +49,15 @@ void Board::print() const
         {
             if (board[i][j] == nullptr)
             {
-                if ((i + j) % 2 == 0)
-                {
-                    std::cout<<"1  ";
-                }
-                else
-                {
-                    std::cout<<"0  ";
-                }
-                
+                // if ((i + j) % 2 == 0)
+                // {
+                //     std::cout<<"1  ";
+                // }
+                // else
+                // {
+                //     std::cout<<"0  ";
+                // }
+                std::cout<<".  ";
             }
             else
             {

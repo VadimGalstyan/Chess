@@ -28,6 +28,7 @@ public:
     virtual void attack(Board* board);
 
 
+
 protected:
     Figure(const int& x,const char& y,const std::string& color);
     virtual ~Figure();
@@ -38,6 +39,7 @@ protected:
 
     std::string m_color;
     std::string m_name;
+
 };
 
 #endif //__FIGURE__
